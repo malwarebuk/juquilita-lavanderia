@@ -403,6 +403,22 @@
             text-align: center;
         }
         
+        .maps-links {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .maps-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        
+        .maps-links a:hover {
+            text-decoration: underline;
+        }
+        
         .contact-form {
             background-color: white;
             padding: 30px;
@@ -590,6 +606,10 @@
             
             .footer-logo img {
                 width: 100px;
+            }
+            
+            .maps-links {
+                flex-direction: column;
             }
         }
     </style>
@@ -806,7 +826,10 @@
                             <i class="fas fa-map-marker-alt contact-icon"></i>
                             <div>
                                 <h4>Dirección</h4>
-                                <p><a href="https://maps.app.goo.gl/XfUb3TWnuUr1vZxZA" target="_blank" style="color: var(--primary);">Ver en Google Maps</a></p>
+                                <div class="maps-links">
+                                    <a href="https://maps.app.goo.gl/XfUb3TWnuUr1vZxZA">Ver en Google Maps</a>
+                                    <a href="https://maps.apple.com/?ll=16.2366701,-97.2933791&q=Lavander%C3%ADa+Juquilita">Ver en Apple Maps</a>
+                                </div>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -857,8 +880,7 @@
                                 <option value="tenis">Limpieza de Tenis</option>
                                 <option value="express">Lavado Express</option>
                                 <option value="cama">Ropa de Cama</option>
-				<option value="otro">Otro</option>
-
+                                <option value="otro">Otro</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -911,7 +933,12 @@
                         <li><i class="fas fa-phone"></i> 951 306 3124</li>
                         <li><i class="fas fa-phone"></i> 954 524 0173</li>
                         <li><i class="fas fa-envelope"></i> josueadanleon187@gmail.com</li>
-                        <li><a href="https://www.google.com/maps/place/Lavander%C3%ADa+Juquilita/@16.2366939,-97.2933857,18z/data=!4m6!3m5!1s0x85b871c03c9204db:0x41d67df30fe11609!8m2!3d16.2366701!4d-97.2933791!16s%2Fg%2F11xzw92gh9?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fas fa-map-marker-alt"></i> Ver Ubicación</a></li>
+                        <li>
+                            <div class="maps-links">
+                                <a href="https://maps.app.goo.gl/XfUb3TWnuUr1vZxZA"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+                                <a href="https://maps.apple.com/?ll=16.2366701,-97.2933791&q=Lavander%C3%ADa+Juquilita"><i class="fas fa-map-marker-alt"></i> Apple Maps</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -944,5 +971,3 @@
 </body>
 
 </html>
-
-
